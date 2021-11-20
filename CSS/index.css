@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: black ; */
+}
+
+
+/* Navigation Bar */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    opacity: .2;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1  ;
+}
+
+#navbar{
+    position: fixed;
+    /* top:0px; */
+    right: 0;
+    left: 0;
+    padding: 0rem 5rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+#nav_logo{
+    display: flex;
+    margin: 0rem 2rem;
+    z-index: 1;
+}
+
+#nav_logo img{
+    width: 4rem;
+}
+
+#nav_ul{
+    display: flex;
+    position: absolute;
+    right: 3rem;
+}
+
+.links{
+    list-style-type: none;
+}
+
+#nav_ul a{
+    font-family: 'Gochi Hand', cursive;
+    display: block;
+    border-radius: 13px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0rem 1.5rem;
+}
+
+#nav_ul a:hover{
+    cursor: pointer;
+    color: rgb(95, 91, 91);
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* First Content */
+/* Home Page */
+#first{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding: 14rem 11rem;
+}
+
+#first::before{
+    content: "";
+    background: url(../Food/fish.jpg)no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+}
+
+.primary-heading{
+    font-size: 4rem;
+    padding-bottom: 0.7rem;
+    font-family: 'Mali', cursive;
+}
+
+#first p{
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-family: 'Mali', cursive;
+}
+
+.btn{
+    font-family: 'Gochi Hand', cursive;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2rem;
+    border:0.2rem solid white;
+    background-color: unset;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Second Content: Restaurants */
+#second{
+    /* background: url("../Food/plain.jpg")no-repeat center center/cover; */
+    display: flex;
+    /* border: 2px solid rebeccapurple; */
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff2f2;
+    align-items: center;
+    font-family: 'Mali', cursive;
+    padding: 0rem 4rem;
+    /* margin-top: 5.5rem; */
+}
+
+#second>h1{
+    color: #c30505;
+}
+
+#service_div{
+    display: flex;
+    /* margin: 0rem 0rem; */
+    width: 100%;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+#service_div img{
+    width: 19rem;
+    border-radius: 2rem;
+}
+
+.service_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    width: min-content;
+    margin: 1rem 0rem;
+    border-radius: 2rem;
+    border: 1px solid red;
+    background-color: #ffe0e0;
+}
+
+.service_box > h2{
+    padding: 0.5rem;
+}
+
+.service_box p{
+    text-align: center;
+}
+
+/*Third: Clients  */
+#clients{
+    /* background: url("../Food/table.jpg")no-repeat center center/cover; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(0, 150, 150);
+    /* height: 200px; */
+}
+
+#clients::before{
+    content: "";
+    background: url("../Food/plain.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+    z-index: -1;
+}
+
+#clients-container{
+    display: flex;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    width: 77vw;
+    justify-content: space-between;
+}
+
+#clients-container>img{
+    width: 8rem;
+    height: 8rem;
+}
+
+/* Fourth: Contact Page */
+#contact-section{
+    /* color: rgb(255, 160, 82); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    color: #a90000;
+}
+
+#contact-section::before{
+    content: "";
+    background: url("../Food/main.jpg")no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-container{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.contact-text{
+    width: 57%;
+}
+
+.contact-text>h3{
+    font-size: 2rem;
+    /* text-align: justify; */
+}
+
+.contact-text>p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column ;
+}
+
+.inputs{
+    display: flex;
+    padding: 1rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.submit{
+    color: #a90000;
+    border-color: #a90000;
+    width: 33%;
+    margin: 0.4rem auto;
+    /* height: 129%; */
+    /* padding: 0.2rem; */
+    font-size: 1.3rem;
+}
+
+.submit:hover{
+    color: #a90000;
+}
+
+/* last:footer */
+#last{
+    color: white;
+    background: black;
+    text-align: center;
+}
+
+#Description{
+    width: max-content;
+}
+
+
+/* later modifications
+.links:hover{
+    background-color: white;
+} */

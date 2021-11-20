@@ -1,0 +1,91 @@
+/* Navigation Bar */
+@media screen and (max-width:757px){
+
+    #navbar{
+        padding: 0;
+    }
+
+    #nav_logo{
+        margin: 0;
+    }
+
+    #nav_ul{
+        right: 0;
+    }
+
+    #nav_ul a{
+        font-family: 'Gochi Hand', cursive;
+        display: block;
+        border-radius: 13px;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 0rem 0.5rem;
+    }
+}
+#nav_ul a:hover {
+    color: rgb(95, 91, 91);
+    background-color: white;
+}
+/* First: Home */
+#first{
+    padding: 10rem 0 2.3rem 0;
+}
+
+.primary-heading{
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* Second: Restaurants */
+@media screen and (max-width:1023px){
+    #service_div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#second>h1{
+    text-align: left;
+}
+
+.service_box{
+    width: 16rem;
+}
+
+#service_div img{
+    width: 16rem;
+    /* border-radius: 2rem; */
+}
+
+/* Third: Clients */
+#clients-container{
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#clients-container>img{
+    margin: 0.5rem;
+    /* width: 19rem; */
+    border-radius: 1rem;
+}
+
+/* Fourth: Contact us */
+#contact-container{
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-text{
+    width: 100%;
+}
+
+#contact-form{
+    /* width: fit-content; */
+    margin: auto;
+}

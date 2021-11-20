@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the best food online|SuperLaLa</title>
+    <!-- css for desktop -->
+    <link rel="stylesheet" href="../CSS/index.css">
+    <!-- css for phone with media query:1210px -->
+    <link rel="stylesheet" media="screen and (max-width: 1210px)" href="../CSS/phone.css">
+    <!-- linking javascript -->
+    <script src="../JS.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar: Logo + NavBar -->
+    <nav id="navbar">
+        <!-- NavBar Logo -->
+        <div id="nav_logo">
+            <img src="../Logos/superlala_blue.png" alt="SuperLaLa">
+        </div >
+        <!-- NavBar Links -->
+        <ul id="nav_ul">
+            <li class="links" id="links1"><a href="#" class="nav-btn" id="home-btn" >Home</a></li>
+            <li class="links" id="links2"><a href="#" class="nav-btn" id="restaurants" >Restaurants</a></li>
+            <li class="links" id="links3"><a href="#" class="nav-btn" id="blog" >Blog</a></li>
+            <li class="links" id="links4"><a href="#" class="nav-btn" id="support" >Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- First content: Home Page -->
+    <section>
+        <div id="first">
+            <h1 class="primary-heading">Welcome to SuperLaLa!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae commodi necessitatibus labore excepturi cum maxime harum vero veritatis recusandae! Temporibus nisi beatae, odit deleniti, laborum explicabo corporis asperiores, accusamus sequi fugit enim cumque animi.</p>
+            <button class="btn" id="order-btn" onclick="clicked()">Order Now!</button>
+        </div>
+    </section>
+
+    <!-- Second Content: Services -->
+    <section id="second">
+
+        <!-- Heading -->
+        <h1 class="primary-heading">#Let's satisfy your cravings!</h1>
+
+        <!-- Boxes -->
+        <div id="service_div">
+
+            <div class="service_box">
+                <img src="../Food/bowl.jpg" alt="">
+                <h2 class="secondary-heading">Exotic Fishes</h2>
+                <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta porro rem eaque inventore repellat, exercitationem pariatur Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="service_box">
+                <img src="../Food/fruits.jpg" alt="">
+                <h2 class="secondary-heading">Deliciuos Fruit Salad</h2>
+                <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta porro rem eaque inventore repellat, exercitationem pariatur Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="service_box">
+                <img src="../Food/redtikka.jpg" alt="">
+                <h2 class="secondary-heading">Spicy Tikka</h2>
+                <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta porro rem eaque inventore repellat, exercitationem pariatur Lorem ipsum dolor sit amet.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Third: Clients -->
+    <section id="clients">
+        <h1 class="primary-heading">Our loving Clients</h1>
+        <div id="clients-container">
+            <img src="../Logos/apple.jpeg" alt="Apple">
+            <img src="../Logos/hp.png" alt="hp">
+            <!-- <img src="../Logos/microsoft.png" alt="microsoft"> -->
+            <img src="../Logos/oyo.png" alt="oyo">
+            <img src="../Logos/skype.png" alt="skype">
+            <img src="../Logos/starbucks.png" alt="starbucks">
+        </div>
+    </section>
+
+    <!-- Fourth: Contact Page -->
+    <section id="contact-section">
+        <h1 class="primary-heading">Contact Us!</h1>
+
+        <div id="contact-container">
+
+            <div class="contact-text">
+                <h3>#Placing an Order!</h3><hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure officiis sapiente aliquid vitae doloribus maiores nisi molestias quod aut, atque, delectus ex deleniti, ad ut. Suscipit voluptatem sed quis tenetur ipsa, culpa ducimus amet!</p>
+            </div>
+            <!-- <hr class="primary-heading"> -->
+
+            <form id="contact-form">
+                <hr>
+                <div class="inputs">
+                    <label for="name">Name :</label>
+                    <input type="name" name="name" id="name">
+                </div>
+                <div class="inputs">
+                    <label for="email">Email ID :</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="inputs">
+                    <label for="phone">Phone No :</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div class="inputs">
+                    <label id="Description" for="desc">Description :</label>
+                    <input type="text" name="desc" id="desc">
+                </div>
+
+                <button class="btn submit" id="submit-btn" onclick="submitclicked()">Submit</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- last: footer -->
+    <footer>
+        <div id="last">
+            <p>SuperLaLa    All Rights Reserved &copy; 2021</p>
+        </div>
+    </footer>
+
+</body>
+
+<!-- JavaScript goes here -->
+<!-- <script>
+    first.addEventListener('mouseover',function mouse_over(){
+    first.style.color = "greenyellow";
+    // btn.style.display = 'none';
+    // console.log('mouseover');
+    })
+    first.addEventListener("mouseout",function mouse_out(){
+        first.style.color="white";
+    })
+    home.addEventListener("onclick",function homeclicked() {
+        alert("home clicked")
+    })
+
+    function submitclicked() {
+        alert("submitted")
+    }
+</script> -->
+
+</html>
